@@ -106,16 +106,6 @@ else
 	hostStyle="${yellow}";
 fi;
 
-
-# Determine active Python virtualenv details.
-function set_virtualenv () {
-  if test -z "$VIRTUAL_ENV" ; then
-      PYTHON_VIRTUALENV=""
-  else
-      PYTHON_VIRTUALENV="${BLUE}[`basename \"$VIRTUAL_ENV\"`]${COLOR_NONE} "
-  fi
-}
-
 function set_prompt_symbol () {
   if test $? -eq 0 ; then
       echo -e "${yellow}\$";
@@ -132,9 +122,8 @@ PS1+="\[${violet}\]@";
 PS1+="\[${hostStyle}\]\h"; # host
 PS1+="\[${white}\] ";
 PS1+="\[${green}\]\w"; # working directory full path
-PS1+="\$(prompt_git \" \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
-PS1+="\[\$(set_virtualenv)\] \n";
-PS1+="\[\$ \]\[${reset}\]"; # `$` (and reset color)
+PS1+="\[\$(prompt_git \" \[${violet}\]\" \"\[${blue}\]\")\]"; # Git repository details
+PS1+="\[\\n$ \]\[${reset}\]"; # `$` (and reset color)
 export PS1;
 
 PS2="\[${yellow}\]→ \[${reset}\]";
