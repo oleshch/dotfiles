@@ -48,3 +48,9 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '~/dev/google-cloud-sdk/path.bash.inc' ]; then . '~/dev/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '~/dev/google-cloud-sdk/completion.bash.inc' ]; then . '~/dev/google-cloud-sdk/completion.bash.inc'; fi
