@@ -9,6 +9,8 @@ alias -- -="cd -"
 
 # Shortcuts
 alias dev="cd ~/dev"
+# Launch Jupiter Labs
+alias jupn="cd ~/dev/jupyter-notebooks/ && source jupyter-notebooks-venv/bin/activate && jupyter lab"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

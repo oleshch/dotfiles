@@ -1,5 +1,5 @@
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
+export PATH="$HOME/bin:/usr/local/sbin:$PATH";
 export GPG_TTY=`tty`
 
 # Load the shell dotfiles, and then some:
