@@ -47,6 +47,7 @@ brew install gs
 brew install imagemagick
 brew install rename
 brew install ssh-copy-id
+brew install bash-completion
 
 # Install Cask Apps
 brew cask install google-chrome
