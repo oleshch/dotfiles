@@ -12,6 +12,10 @@ alias dev="cd ~/dev"
 # Launch Jupiter Labs
 alias jupn="cd ~/dev/jupyter-notebooks/ && source jupyter-notebooks-venv/bin/activate && jupyter lab"
 
+alias mv="mv -iv"
+alias cp="cp -riv"
+alias mkdir='mkdir -vp'
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
