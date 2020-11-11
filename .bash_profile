@@ -4,6 +4,9 @@ export PATH="$HOME/bin:/usr/local/sbin:$PATH";
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
+# Silencing the bash deprication message
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
