@@ -1,8 +1,15 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:/usr/local/sbin:$PATH";
 
-# Add Visual Studio Code (code)
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Added usr base bin
+PYTHON_BIN_PATH="$(python3 -m site --user-base)/bin"
+export PATH="$PATH:$PYTHON_BIN_PATH"
+
+#Added subl command
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
 # Silencing the bash deprication message
 export BASH_SILENCE_DEPRECATION_WARNING=1
