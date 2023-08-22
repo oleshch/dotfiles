@@ -13,7 +13,7 @@ alias dev="cd ~/dev"
 #Esphome Update Script
 alias esphome_up="bash ~/dev/esphome/esphome_up.sh"
 
-#Directoires
+#Directoiress
 alias mv="mv -iv"
 alias cp="cp -riv"
 alias mkdir='mkdir -vp'
