@@ -9,9 +9,11 @@ alias -- -="cd -"
 
 # Shortcuts
 alias dev="cd ~/dev"
-# Launch Jupiter Labs
-alias jupn="cd ~/dev/jupyter-notebooks/ && source jupyter-notebooks-venv/bin/activate && jupyter lab"
 
+#Esphome Update Script
+alias esphome_up="bash ~/dev/esphome/esphome_up.sh"
+
+#Directoires
 alias mv="mv -iv"
 alias cp="cp -riv"
 alias mkdir='mkdir -vp'
@@ -58,7 +60,6 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 
 # Google Chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
-alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
