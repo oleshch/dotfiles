@@ -52,11 +52,10 @@ brew install ssh-copy-id
 brew install bash-completion
 
 # Install Cask Apps
-brew cask install google-chrome
-brew cask install sublime-text
-brew cask install iterm2
-brew cask install slack
-brew cask install spotify
+brew install google-chrome --cask
+brew install sublime-text --cask
+brew install iterm2 --cask
+brew install slack --cask
 
 # Remove outdated versions from the cellar.
 brew cleanup
