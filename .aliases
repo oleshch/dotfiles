@@ -10,9 +10,6 @@ alias -- -="cd -"
 # Shortcuts
 alias dev="cd ~/dev"
 
-#Esphome Update Script
-alias esphome_up="bash ~/dev/esphome/esphome_up.sh"
-
 #Directoiress
 alias mv="mv -iv"
 alias cp="cp -riv"
@@ -41,7 +38,7 @@ alias ls="command ls ${colorflag}"
 
 # Git Aliases
 alias gs='git status'
-alias gp='git push origin master'
+alias gp='git push origin main'
 
 # Always enable colored `grep` output
 # Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
@@ -56,7 +53,7 @@ alias sudo='sudo '
 alias week='date +%V'
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup;'
 
 # Google Chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'

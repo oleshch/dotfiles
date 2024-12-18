@@ -11,6 +11,9 @@ export PATH="$PATH:$PYTHON_BIN_PATH"
 #Added subl command
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
+# Add Visual Studio Code (code)
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+
 # Silencing the bash deprication message
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
@@ -62,8 +65,5 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f ~/'dev/google-cloud-sdk/path.bash.inc' ]; then . ~/'dev/google-cloud-sdk/path.bash.inc'; fi
-
 # The next line enables shell command completion for gcloud.
-if [ -f ~/'dev/google-cloud-sdk/completion.bash.inc' ]; then . ~/'dev/google-cloud-sdk/completion.bash.inc'; fi
+if [ -f ~/.dbt-completion.bash ]; then . ~/.dbt-completion.bash; fi

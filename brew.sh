@@ -40,7 +40,6 @@ brew install openssh
 brew install screen
 brew install php
 
-
 # Install other useful binaries.
 brew install ack
 brew install git
@@ -52,10 +51,11 @@ brew install ssh-copy-id
 brew install bash-completion
 
 # Install Cask Apps
-brew install google-chrome --cask
-brew install sublime-text --cask
-brew install iterm2 --cask
-brew install slack --cask
+brew install --cask google-chrome 
+brew install --cask sublime-text
+brew install --cask iterm2 
+brew install --cask slack 
+brew install --cask google-cloud-sdk
 
 # Remove outdated versions from the cellar.
 brew cleanup

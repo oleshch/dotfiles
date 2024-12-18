@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source initial_install.sh
+
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
@@ -8,9 +10,10 @@ function doIt() {
 	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
 		--exclude ".osx" \
-		--exclude "bootstrap.sh" \
+		--exclude "initial_install.sh" \
+		--exclude "install.sh" \
 		--exclude "README.md" \
-		--exclude "LICENSE-MIT.txt" \
+		--exclude ".gitconfig" \
 		-avh --no-perms . ~;
 	source ~/.bash_profile;
 }
