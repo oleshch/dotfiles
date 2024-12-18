@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source initial_install.sh
+source bootstrap.sh
 
 cd "$(dirname "${BASH_SOURCE}")";
 
@@ -10,10 +10,10 @@ function doIt() {
 	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
 		--exclude ".osx" \
-		--exclude "initial_install.sh" \
+		--exclude "bootstrap.sh" \
 		--exclude "install.sh" \
+		--exclude "brew.sh" \
 		--exclude "README.md" \
-		--exclude ".gitconfig" \
 		-avh --no-perms . ~;
 	source ~/.bash_profile;
 }

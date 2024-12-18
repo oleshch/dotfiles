@@ -38,7 +38,9 @@ fi;
 brew install grep
 brew install openssh
 brew install screen
-brew install php
+
+# Productivity Programs
+brew install MonitorControl
 
 # Install other useful binaries.
 brew install ack
@@ -56,6 +58,10 @@ brew install --cask sublime-text
 brew install --cask iterm2 
 brew install --cask slack 
 brew install --cask google-cloud-sdk
+brew install --cask rectangle
+brew install --cask copyclip
+brew install --cask rustdesk
+brew install --cask plexamp
 
 # Remove outdated versions from the cellar.
 brew cleanup
